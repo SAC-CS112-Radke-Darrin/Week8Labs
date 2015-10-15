@@ -10,8 +10,10 @@ public class Week8Lab1 {
 		int birthDate;
 		
 		int currentYear = 2015;
-		
+				
 		int age;
+		
+		
 		
 		name = JOptionPane.showInputDialog("What is your name?");
 		
@@ -19,10 +21,12 @@ public class Week8Lab1 {
 		
 		age = currentYear - birthDate;
 		
+		int years = 21 - age;
+		
 		JOptionPane.showMessageDialog(null, String.format("Hello, %s, you're %s today!", name, age));
 		
 		if(age < 21){
-		JOptionPane.showMessageDialog(null, "You are not legally allowed to drink.");}
+		JOptionPane.showMessageDialog(null, String.format("You are not legally allowed to drink. You can legally drink in %s years.", years));}
 		
 		else{
 			JOptionPane.showMessageDialog(null, "You are legally allowed to drink.");}
